@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#game-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#game-container::-webkit-scrollbar-thumb {
+  background-color: rgb(3, 0, 16); 
+}
+#game-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(35, 35, 36); 
+}
+.app {
+  
+background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 70%, rgba(31,0,106,1) 100%);
+  
+}
+
+img{
+  box-shadow: 0 0 50px rgb(0, 75, 100);
+  animation: shadow-animation 3s infinite ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #150050; 
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0); 
+}
+
+
+
+@keyframes shadow-animation {
+  0% {
+    box-shadow: 0 0 50px rgb(0, 0, 100);
+  }
+  50% {
+    box-shadow: 0 0 100px rgb(212, 0, 201);
+  }
+  100% {
+    box-shadow: 0 0 50px rgb(0, 0, 100);
+  }
+}
